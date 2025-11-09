@@ -164,7 +164,7 @@ def main():
     )
 
 
-    st.write("Paste your questions, pick the formatting rules, and generate a QTI XML (and optional ZIP) for Canvas. 🧠📥➡️📤")
+    st.write("Paste your questions, pick the formatting rules, and generate a QTI XML (and optional ZIP) for Canvas.")
 
     col_left, col_right = st.columns([2, 1])
 
