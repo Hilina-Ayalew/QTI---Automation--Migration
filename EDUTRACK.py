@@ -141,8 +141,28 @@ def create_qti_bytes(questions, points_per_question: float) -> bytes:
 # --------- STREAMLIT APP --------- #
 
 def main():
-    st.set_page_config(page_title="QTI Converter - FUSE", layout="wide")
-    st.title("QTI Converter - FUSE (Web Version)")
+    st.set_page_config(page_title="EDULEARN - QTI Converter", layout="wide")
+
+    # Logo and Title side by side
+    st.markdown(
+        """
+        <div style="
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        ">
+            <img src="https://edusuite360.com/wp-content/uploads/2025/03/logo-edulearn-03.png" 
+                 alt="EDULEARN Logo" 
+                 width="150">
+            <h1 style="font-size: 32px; font-weight: 700; margin: 0; color: #fff;">
+                QTI Converter
+            </h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
     st.write("Paste your questions, pick the formatting rules, and generate a QTI XML (and optional ZIP) for Canvas. 🧠📥➡️📤")
 
